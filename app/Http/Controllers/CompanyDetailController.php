@@ -55,6 +55,7 @@ class CompanyDetailController extends Controller
             'gstin'         => $request->gstin,
         ]);
 
-        return redirect('/')->with('success', 'Company details saved successfully.');
+        return redirect('/dashboard')->with('success', 'Company setup complete!');
+
     }
 }
