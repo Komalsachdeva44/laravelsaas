@@ -77,7 +77,7 @@ class TenantRegisterController extends Controller
         )"); //this will create tenant dahsboard data base
 
         // Step 7: Redirect with success
-        return redirect()->route('register.form')
-            ->with('success', "Tenant registered. Visit: http://$subdomain.localhost");
+       return redirect()->route('company.details.form', ['user' => $user->id]);
+
     }
 }
